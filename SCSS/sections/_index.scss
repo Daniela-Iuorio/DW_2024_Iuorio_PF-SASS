@@ -17,12 +17,48 @@
         }
     }
 
-    .news-box {
+    .news-box-1 {
         @extend .box;
         @extend .box-style;
 
         img {
             @extend .index-photo;
+        }
+
+        h2 {
+            @extend .news-title;
+        }
+
+        p {
+            @extend .box-text;
+        }
+    }
+
+    .news-box-2 {
+        @extend .box;
+        @extend .box-style;
+        @extend .invertida;
+
+        img {
+            @extend .index-photo;
+        }
+
+        h2 {
+            @extend .news-title;
+        }
+
+        p {
+            @extend .box-text;
+        }
+    }
+
+    .news-box-3 {
+        @extend .box;
+        @extend .box-style;
+
+        img {
+            @extend .index-photo;
+            @extend .rueda;
         }
 
         h2 {
