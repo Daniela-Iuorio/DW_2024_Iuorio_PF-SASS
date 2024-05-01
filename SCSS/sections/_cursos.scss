@@ -1,0 +1,45 @@
+.courses {
+    @extend .main-gradient;
+    display: grid;
+    grid-template-areas:
+        "elem inter"
+        "adv exam"
+    ;
+    justify-items: center;
+
+    .courses_card-elem {
+        grid-area: elem;
+    }
+
+    .courses_card-inter {
+        grid-area: inter;
+    }
+
+    .courses_card-adv {
+        grid-area: adv;
+    }
+
+    .courses_card-exam {
+        grid-area: exam;
+    }
+}
+
+
+.courses_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 400px;
+
+    p {
+        text-align: justify;
+    }
+}
+
+.courses_card-button {
+    margin: 5px;
+    @extend .button-bg-color;
+}

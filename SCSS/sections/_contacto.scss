@@ -1,0 +1,51 @@
+// Copio css original por el momento, luego adapto
+
+#contact-form {
+    padding: 10px;
+    /* position: relative; */
+}
+
+/* .contact_button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
+
+#contact-form input,
+#contact-form p,
+select,
+textarea {
+    margin: 5px;
+    padding: 5px;
+}
+
+.selector-curso {
+    display: inline;
+}
+
+.contact_input-email {
+    width: 250px;
+}
+
+#comentario {
+    display: block;
+    width: 96%;
+    height: 200px;
+}
+
+.email-phone-time {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.email-phone-time ul,
+.email-phone-time li {
+    margin: 10px;
+    padding: 0px;
+}
+
+
+.horario-atencion {
+    margin: 15px;
+    text-align: center;
+}

@@ -21,22 +21,32 @@
   justify-content: center;
   align-items: center; }
 
-.button {
+button {
   border-radius: 5px;
   border: transparent;
   padding: 5px;
   box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705); }
 
-.button-bg-color {
+.button-bg-color, .courses_card-button {
   background-color: rgba(146, 236, 73, 0.247); }
 
-.titulo-secundario, #main-index .welcome-box h2 {
+a {
+  color: black;
+  text-decoration: none; }
+
+h2 {
   color: var(--verde-oscuro);
   padding: 5px;
   margin: 0px 5px 5px 5px; }
 
-.main-gradient, #main-index {
+.main-gradient, .home, .courses {
   background-image: linear-gradient(to bottom, rgba(146, 236, 73, 0.671), rgba(243, 250, 246, 0.726), white); }
+
+a:hover {
+  font-weight: bold; }
+
+i:hover {
+  font-size: 40px; }
 
 .navbar-brand {
   background-color: rgba(20, 184, 86, 0.308);
@@ -54,33 +64,311 @@ footer {
     padding: 10px;
     margin: 0; }
 
-.box-text, #main-index .welcome-box p, #main-index .news-box p {
+.home .news-box-1 h2 {
+  grid-area: title; }
+
+.home .news-box-2 h2 {
+  grid-area: title; }
+
+.home .news-box-3 h2 {
+  grid-area: title; }
+
+.box-text, .home .welcome-box p, .home .news-box-1 p, .home .news-box-2 p, .home .news-box-3 p {
   grid-area: texto;
   padding: 0px 10px; }
 
-.index-photo, #main-index .welcome-box img, #main-index .news-box img {
+.index-photo, .home .welcome-box img, .home .news-box-1 img, .home .news-box-2 img, .home .news-box-3 img {
   width: 300px;
   display: inline;
   grid-area: photo; }
 
-.news-title, #main-index .news-box h2 {
-  grid-area: title; }
-
-.box, #main-index .welcome-box, #main-index .news-box {
+.box, .home .welcome-box, .home .news-box-1, .home .news-box-2, .home .news-box-3 {
   align-items: center;
   display: grid;
   grid-template-areas: "photo title" "photo texto";
   padding: 5px;
   text-align: justify; }
 
-.rueda {
+.rueda, .home .news-box-3 img {
   width: 250px; }
 
-.invertida {
+.invertida, .home .welcome-box, .home .news-box-2 {
   grid-template-areas: "title photo" "texto photo"; }
 
-.box-style, #main-index .news-box {
+.box-style, .home .news-box-1, .home .news-box-2, .home .news-box-3 {
   margin: 10px;
   box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
   background-color: #ffffff;
   border-radius: 5px; }
+
+.courses {
+  display: grid;
+  grid-template-areas: "elem inter" "adv exam";
+  justify-items: center; }
+  .courses .courses_card-elem {
+    grid-area: elem; }
+  .courses .courses_card-inter {
+    grid-area: inter; }
+  .courses .courses_card-adv {
+    grid-area: adv; }
+  .courses .courses_card-exam {
+    grid-area: exam; }
+
+.courses_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 400px; }
+  .courses_card p {
+    text-align: justify; }
+
+.courses_card-button {
+  margin: 5px; }
+
+.spotify-iframe {
+  width: 310px;
+  height: 100px;
+  overflow: hidden; }
+
+.games_link {
+  text-decoration: none; }
+
+.game-picture {
+  width: 230px;
+  height: 150px;
+  border: solid black 1px;
+  margin: 5px; }
+
+.video {
+  width: 300px;
+  height: 200px;
+  margin: 20px; }
+
+.resources ul li a {
+  text-decoration: none;
+  color: black; }
+
+.resources_columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.section-videos {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "video1 video2" "video1 video2" "video3 spotify1" "video3 spotify2"; }
+
+.video1 {
+  grid-area: video1; }
+
+.video2 {
+  grid-area: video2; }
+
+.video3 {
+  grid-area: video3; }
+
+.spotify1 {
+  grid-area: spotify1; }
+
+.spotify2 {
+  grid-area: spotify2; }
+
+.mision-picture {
+  width: 220px; }
+
+.mision {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 10px 0px 10px; }
+
+.mision p {
+  text-align: justify;
+  padding: 5px;
+  margin: 5px; }
+
+.reddit {
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
+  align-content: flex-start;
+  overflow: hidden;
+  margin: 20px; }
+
+.redes_social-link {
+  color: rgba(0, 0, 0, 0.767);
+  font-size: 30px; }
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.redes_social {
+  background-color: rgba(0, 0, 0, 0.233);
+  width: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px; }
+
+#contact-form {
+  padding: 10px;
+  /* position: relative; */ }
+
+/* .contact_button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+} */
+#contact-form input,
+#contact-form p,
+select,
+textarea {
+  margin: 5px;
+  padding: 5px; }
+
+.selector-curso {
+  display: inline; }
+
+.contact_input-email {
+  width: 250px; }
+
+#comentario {
+  display: block;
+  width: 96%;
+  height: 200px; }
+
+.email-phone-time {
+  display: flex;
+  justify-content: space-evenly; }
+
+.email-phone-time ul,
+.email-phone-time li {
+  margin: 10px;
+  padding: 0px; }
+
+.horario-atencion {
+  margin: 15px;
+  text-align: center; }
+
+#carouselExample {
+  display: flex;
+  justify-content: center; }
+
+.carousel-inner {
+  width: 80%; }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px; }
+
+.profile-picture {
+  width: 140px; }
+
+.teacher {
+  display: grid;
+  grid-template-areas: "nombre textoTeach" "foto textoTeach";
+  text-align: justify;
+  align-items: center;
+  margin: 20px;
+  background-color: rgba(170, 238, 198, 0.479);
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
+  padding: 10px; }
+
+.teacher h3,
+.teacher p,
+.teacher img {
+  padding: 5px;
+  margin: 10px; }
+
+.teacher h3 {
+  grid-area: nombre; }
+
+.teacher p {
+  grid-area: textoTeach; }
+
+.teacher imga {
+  grid-area: foto; }
+
+.historia p {
+  text-align: justify;
+  padding: 5px;
+  margin: 5px; }
+
+@media (max-width: 360px) {
+  .footer_text {
+    color: black;
+    padding: 5px;
+    margin: 0;
+    font-size: small; } }
+
+@media (max-width: 425px) {
+  .email-phone-time {
+    flex-direction: column; }
+  .contact_input,
+  .contact_input-email {
+    width: 95%; }
+  .courses {
+    display: grid;
+    grid-template-areas: "elem" "inter" "adv" "exam"; }
+  .mision {
+    flex-direction: column; }
+  .redes {
+    flex-direction: column; }
+  .redes_social {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly; }
+  h2 {
+    text-align: center; } }
+
+@media (max-width: 660px) {
+  .news-box,
+  .welcome-box, .invertida, .home .welcome-box, .home .news-box-2 {
+    justify-items: center;
+    display: grid;
+    grid-template-areas: "title" "photo" "texto";
+    padding: 5px; }
+  .teacher {
+    grid-template-areas: "nombre" "foto" "textoTeach";
+    justify-items: center; } }
+
+@media (min-width: 661px) and (max-width: 760px) {
+  .teacher {
+    grid-template-areas: "nombre nombre" "foto textoTeach";
+    justify-items: center; }
+  .profile-picture {
+    width: 166px; } }
+
+@media (max-width: 768px) {
+  .contact_button {
+    display: block; } }
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .contact_input-email {
+    width: 300px; } }
+
+@media (min-width: 900px) {
+  .redes_social {
+    background-color: rgba(0, 0, 0, 0.137);
+    width: 150px;
+    height: 240px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 10px; } }
+
+@media (max-width: 1000px) {
+  .courses_card {
+    width: auto; } }

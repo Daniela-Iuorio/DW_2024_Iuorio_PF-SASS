@@ -1,0 +1,63 @@
+// Copio el css original por el momento, luego adapto
+
+#carouselExample {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner {
+    width: 80%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.profile-picture {
+    width: 140px;
+}
+
+.teacher {
+    display: grid;
+    grid-template-areas:
+        "nombre textoTeach"
+        "foto textoTeach"
+    ;
+    text-align: justify;
+    align-items: center;
+    margin: 20px;
+    background-color: rgba(170, 238, 198, 0.479);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
+    padding: 10px;
+}
+
+.teacher h3,
+.teacher p,
+.teacher img {
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.teacher h3 {
+    grid-area: nombre;
+}
+
+.teacher p {
+    grid-area: textoTeach;
+}
+
+.teacher imga {
+    grid-area: foto;
+}
+
+.historia p {
+    text-align: justify;
+    padding: 5px;
+    margin: 5px;
+}

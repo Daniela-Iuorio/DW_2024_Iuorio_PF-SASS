@@ -1,0 +1,69 @@
+// Copio el css original por el momento + (no es responsive aún)
+
+
+.spotify-iframe {
+    width: 310px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.games_link {
+    text-decoration: none;
+}
+
+.game-picture {
+    width: 230px;
+    height: 150px;
+    border: solid black 1px;
+    margin: 5px;
+}
+
+.video {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
+
+.resources ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.resources_columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-videos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "video1 video2"
+        "video1 video2"
+        "video3 spotify1"
+        "video3 spotify2"
+    ;
+}
+
+.video1{
+    grid-area: video1
+}
+
+.video2{
+    grid-area: video2
+}
+
+.video3{
+    grid-area: video3
+}
+
+.spotify1{
+    grid-area: spotify1
+}
+
+.spotify2{
+    grid-area: spotify2
+}

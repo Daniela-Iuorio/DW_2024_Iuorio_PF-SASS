@@ -1,0 +1,125 @@
+@media (max-width: 360px) {
+    .footer_text {
+        color: black;
+        padding: 5px;
+        margin: 0;
+        font-size: small;
+    }
+}
+
+@media (max-width: 425px) {
+    .email-phone-time {
+        flex-direction: column;
+    }
+
+    .contact_input,
+    .contact_input-email {
+        width: 95%;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-areas:
+            "elem"
+            "inter"
+            "adv"
+            "exam"
+        ;
+    }
+
+    .mision {
+        flex-direction: column;
+    }
+
+    .redes {
+        flex-direction: column;
+    }
+
+    .redes_social {
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .news-box,
+    .welcome-box,
+    .invertida {
+        justify-items: center;
+        display: grid;
+        grid-template-areas:
+            "title"
+            "photo"
+            "texto"
+        ;
+        padding: 5px;
+    }
+    .teacher {
+        grid-template-areas:
+            "nombre"
+            "foto"
+            "textoTeach"
+        ;
+        justify-items: center;
+    }
+}
+
+@media (min-width: 661px) and (max-width: 760px) {
+    .teacher {
+        grid-template-areas:
+            "nombre nombre"
+            "foto textoTeach"
+        ;
+        justify-items: center;
+    }
+
+    .profile-picture {
+        width: 166px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .contact_button {
+        display: block;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .contact_input-email {
+        width: 300px;
+    }
+
+
+}
+
+
+@media (min-width: 900px) {
+
+    .redes_social {
+        background-color: rgba(0, 0, 0, 0.137);
+        width: 150px;
+        height: 240px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 1000px){
+    .courses_card{
+        width: auto;
+    }
+}

@@ -1,12 +1,9 @@
-#main-index {
+.home {
     @extend .main-gradient;
 
     .welcome-box {
         @extend .box;
-        @extend .ivertida;
-        h2 {
-            @extend .titulo-secundario;
-        }
+        @extend .invertida;
 
         p {
             @extend .box-text;
@@ -26,7 +23,7 @@
         }
 
         h2 {
-            @extend .news-title;
+            grid-area: title;
         }
 
         p {
@@ -44,7 +41,7 @@
         }
 
         h2 {
-            @extend .news-title;
+            grid-area: title;
         }
 
         p {
@@ -62,7 +59,7 @@
         }
 
         h2 {
-            @extend .news-title;
+            grid-area: title;
         }
 
         p {
@@ -82,9 +79,6 @@
     grid-area: photo;
 }
 
-.news-title {
-    grid-area: title;
-}
 
 .box {
     align-items: center;
