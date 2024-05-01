@@ -1,4 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300..800;1,300..800&display=swap");
+:root {
+  --verde-oscuro: #14b856ff;
+  --verde-claro: #93EC49ff; }
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', sans-serif; }
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.button {
+  border-radius: 5px;
+  border: transparent;
+  padding: 5px;
+  box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705); }
+
+.button-bg-color {
+  background-color: rgba(146, 236, 73, 0.247); }
+
+.titulo-secundario, #main-index .welcome-box h2 {
+  color: var(--verde-oscuro);
+  padding: 5px;
+  margin: 0px 5px 5px 5px; }
+
+.main-gradient, #main-index {
+  background-image: linear-gradient(to bottom, rgba(146, 236, 73, 0.671), rgba(243, 250, 246, 0.726), white); }
+
+.navbar-brand {
+  background-color: rgba(20, 184, 86, 0.308);
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px; }
+
+footer {
+  background-color: rgba(20, 184, 86, 0.486);
+  bottom: 0;
+  width: 100%;
+  text-align: center; }
+  footer .footer_text {
+    color: black;
+    padding: 10px;
+    margin: 0; }
+
+.box-text, #main-index .welcome-box p, #main-index .news-box p {
+  grid-area: texto;
+  padding: 0px 10px; }
+
+.index-photo, #main-index .welcome-box img, #main-index .news-box img {
+  width: 300px;
+  display: inline;
+  grid-area: photo; }
+
+.news-title, #main-index .news-box h2 {
+  grid-area: title; }
+
+.box, #main-index .welcome-box, #main-index .news-box {
+  align-items: center;
+  display: grid;
+  grid-template-areas: "photo title" "photo texto";
+  padding: 5px;
+  text-align: justify; }
+
+.rueda {
+  width: 250px; }
+
+.invertida {
+  grid-template-areas: "title photo" "texto photo"; }
+
+.box-style, #main-index .news-box {
+  margin: 10px;
+  box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
+  background-color: #ffffff;
+  border-radius: 5px; }
