@@ -1,51 +1,54 @@
-// Copio css original por el momento, luego adapto
+.contact {
+    @extend .main-gradient;
 
-#contact-form {
-    padding: 10px;
-    /* position: relative; */
+    .contact-form {
+        padding: 10px;
+
+        .form-item {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .contact_input-email {
+            width: 250px;
+        }
+
+        p {
+            display: inline;
+        }
+
+        textarea {
+            display: block;
+            width: 96%;
+            height: 200px;
+        }
+
+        .contact_button {
+            @extend button;
+        }
+    }
+
+    .email-phone-time {
+        display: flex;
+        justify-content: space-evenly;
+
+        ul {
+            margin: 10px;
+            padding: 0px;
+
+            li {
+                margin: 10px;
+                padding: 0px;
+                list-style-type: none;
+            }
+        }
+    }
+    .horario-atencion {
+        margin: 15px;
+        text-align: center;
+    }
 }
 
-/* .contact_button{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-} */
-
-#contact-form input,
-#contact-form p,
-select,
-textarea {
-    margin: 5px;
-    padding: 5px;
-}
-
-.selector-curso {
-    display: inline;
-}
-
-.contact_input-email {
-    width: 250px;
-}
-
-#comentario {
-    display: block;
-    width: 96%;
-    height: 200px;
-}
-
-.email-phone-time {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.email-phone-time ul,
-.email-phone-time li {
-    margin: 10px;
-    padding: 0px;
-}
 
 
-.horario-atencion {
-    margin: 15px;
-    text-align: center;
-}
+

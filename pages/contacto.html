@@ -53,21 +53,21 @@
         </nav>
         <!-- End of Bootstrap NavBar -->
         <main class="contact">
-            <form action="#" method="get" id="contact-form">
-                <input class="contact_input" type="text" placeholder="Nombre y Apellido" name="nombre-apellido">
-                <input class="contact_input contact_input-email" type="email" placeholder="correo@mail.com" name="email-usuario">
-                <input class="contact_input" type="tel" placeholder="celular sin 0 ni 15" name="celular">
-                <p class="selector-curso">Curso de interés:</p>
-                <select name="Curso">
+            <form action="#" method="get" class="contact-form">
+                <input class="form-item" type="text" placeholder="Nombre y Apellido" name="nombre-apellido">
+                <input class="form-item contact_input-email" type="email" placeholder="correo@mail.com" name="email-usuario">
+                <input class="form-item" type="tel" placeholder="celular sin 0 ni 15" name="celular">
+                <p class="form-item">Curso de interés:</p>
+                <select class="form-item" name="Curso">
                     <option value="Elem">Elementary</option>
                     <option value="Inter">Intermediate</option>
                     <option value="Adv">Advanced</option>
                     <option value="Exam">Exam training</option>
                 </select>
-                <textarea name="comentario" placeholder="Contanos cómo podemos ayudarte." id="comentario" 
+                <textarea name="comentario" placeholder="Contanos cómo podemos ayudarte." class="form-item comentario" 
                     ></textarea>
-                <input type="checkbox" name="suscripcion"> Recibir novedades y promociones por email.
-                <input class="contact_button" type="submit" value="Enviar">
+                <input class="form-item" type="checkbox" name="suscripcion"> Recibir novedades y promociones por email.
+                <input class="form-item contact_button" type="submit" value="Enviar">
             </form>
             <div class="email-phone-time">
                 <ul>

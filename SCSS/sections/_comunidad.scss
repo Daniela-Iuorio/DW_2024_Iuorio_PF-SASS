@@ -1,47 +1,44 @@
-// Copio css original por el momento, luego adapto
+.comunidad {
+    @extend .main-gradient;
 
-.mision-picture {
-    width: 220px;
-}
+    .mision {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0px 10px 0px 10px;
 
-.mision {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0px 10px 0px 10px;
-}
+        p {
+            text-align: justify;
+            padding: 5px;
+            margin: 5px;
+        }
 
-.mision p {
-    text-align: justify;
-    padding: 5px;
-    margin: 5px;
-}
+        img {
+            width: 220px;
+        }
+    }
 
-.reddit {
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
-    align-content: flex-start;
-    overflow: hidden;
-    margin: 20px;
-}
+    .redes {
+        @extend .flex-row;
 
-.redes_social-link {
-    color: rgba(0, 0, 0, 0.767);
-    font-size: 30px
-}
+        .redes_social {
+            background-color: rgba(0, 0, 0, 0.233);
+            width: 50px;
+            border-radius: 10px;
+            margin: 10px;
+            @extend .flex-column;
 
-.redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+            .redes_social-link {
+                color: rgba(0, 0, 0, 0.767);
+                font-size: 30px
+            }
+        }
 
-.redes_social {
-    background-color: rgba(0, 0, 0, 0.233);
-    width: 50px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+        .reddit {
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
+            overflow: hidden;
+            margin: 20px;
+        }
+    }
 }
