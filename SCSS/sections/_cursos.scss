@@ -42,3 +42,23 @@
         grid-area: exam;
     }
 }
+
+@media (max-width: 1000px) {
+    .courses {
+        .courses_card {
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .courses {
+        display: grid;
+        grid-template-areas:
+            "elem"
+            "inter"
+            "adv"
+            "exam"
+        ;
+    }
+}

@@ -43,12 +43,45 @@
             }
         }
     }
+
     .horario-atencion {
         margin: 15px;
         text-align: center;
     }
 }
 
+// Media Queries
 
+@media (max-width: 425px) {
+    .contact {
+        .email-phone-time {
+            flex-direction: column;
+        }
 
+        .contact-form {
+            .contact_input-email {
+                width: 95%;
+            }
+        }
+    }
+}
 
+@media (max-width: 768px) {
+    .contact {
+        .contact-form {
+            .contact_button {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .contact {
+        .contact-form {
+            .contact_input-email {
+                width: 300px;
+            }
+        }
+    }
+}

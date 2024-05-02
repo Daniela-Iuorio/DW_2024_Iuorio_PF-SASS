@@ -67,3 +67,47 @@
 
     }
 }
+
+// Media Queries
+
+@media (max-width: 660px) {
+    .nosotros {
+        #carouselExample {
+            .carousel-inner {
+                .carousel-item {
+                    .teacher {
+                        grid-template-areas:
+                            "nombre"
+                            "foto"
+                            "textoTeach"
+                        ;
+                        justify-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 661px) and (max-width: 760px) {
+    .nosotros {
+        #carouselExample {
+            .carousel-inner {
+                .carousel-item {
+                    .teacher {
+                        grid-template-areas:
+                            "nombre nombre"
+                            "foto textoTeach"
+                        ;
+                        justify-items: center;
+
+                        img {
+                            width: 166px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

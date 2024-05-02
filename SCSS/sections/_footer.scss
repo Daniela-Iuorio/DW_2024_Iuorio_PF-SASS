@@ -3,9 +3,19 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+
     .footer_text {
         color: black;
         padding: 10px;
         margin: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    footer {
+        .footer_text {
+            padding: 5px;
+            font-size: small;
+        }
     }
 }
