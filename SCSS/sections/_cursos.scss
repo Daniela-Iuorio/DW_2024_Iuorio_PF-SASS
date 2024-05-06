@@ -1,45 +1,48 @@
 .courses {
     @extend .main-gradient;
-    display: grid;
-    grid-template-areas:
-        "elem inter"
-        "adv exam"
-    ;
-    justify-items: center;
 
-    .courses_card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-        width: 400px;
+    .courses_content {
+        display: grid;
+        grid-template-areas:
+            "elem inter"
+            "adv exam"
+        ;
+        justify-items: center;
 
-        p {
-            text-align: justify;
+        .courses_card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 400px;
+
+            p {
+                text-align: justify;
+            }
+
+            button {
+                margin: 5px;
+                @extend .button-bg-color;
+            }
         }
 
-        button {
-            margin: 5px;
-            @extend .button-bg-color;
+        .courses_card-elem {
+            grid-area: elem;
         }
-    }
 
-    .courses_card-elem {
-        grid-area: elem;
-    }
+        .courses_card-inter {
+            grid-area: inter;
+        }
 
-    .courses_card-inter {
-        grid-area: inter;
-    }
+        .courses_card-adv {
+            grid-area: adv;
+        }
 
-    .courses_card-adv {
-        grid-area: adv;
-    }
-
-    .courses_card-exam {
-        grid-area: exam;
+        .courses_card-exam {
+            grid-area: exam;
+        }
     }
 }
 
@@ -52,7 +55,7 @@
 }
 
 @media (max-width: 425px) {
-    .courses {
+    .courses_content {
         display: grid;
         grid-template-areas:
             "elem"

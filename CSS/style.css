@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300..800;1,300..800&display=swap");
 :root {
   --verde-oscuro: #14b856ff;
-  --verde-claro: #93EC49ff; }
+  --verde-claro: #93EC49ff;
+  --fondo-verde: rgba(20, 184, 86, 0.733); }
 
 * {
   margin: 0;
@@ -27,17 +28,28 @@ button, .contact .contact-form .contact_button {
   padding: 5px;
   box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705); }
 
-.button-bg-color, .courses .courses_card button, .courses .courses_card .contact .contact-form .contact_button, .contact .contact-form .courses .courses_card .contact_button {
+.button-bg-color, .courses .courses_content .courses_card button, .courses .courses_content .courses_card .contact .contact-form .contact_button, .contact .contact-form .courses .courses_content .courses_card .contact_button {
   background-color: rgba(146, 236, 73, 0.247); }
 
 a {
   color: black;
   text-decoration: none; }
 
+h1 {
+  color: var(--verde-oscuro);
+  text-align: center;
+  border-bottom: solid 2px;
+  box-shadow: 0px 0px 5px 0px;
+  padding: 5px;
+  font-family: "Manuale", serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.76); }
+
 h2 {
   color: var(--verde-oscuro);
   padding: 5px;
-  margin: 0px 5px 5px 5px; }
+  margin: 0px 5px 5px 5px;
+  font-family: "Manuale", serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.678); }
 
 @media (max-width: 425px) {
   h2 {
@@ -53,13 +65,17 @@ i:hover {
   font-size: 40px; }
 
 .navbar-brand {
-  background-color: rgba(20, 184, 86, 0.308);
+  background-color: var(--fondo-verde);
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  font-family: "Manuale", serif;
+  font-weight: bold; }
+  .navbar-brand img {
+    padding: 0px 5px; }
 
 footer {
-  background-color: rgba(20, 184, 86, 0.486);
+  background-color: var(--fondo-verde);
   bottom: 0;
   width: 100%;
   text-align: center; }
@@ -72,6 +88,11 @@ footer {
   footer .footer_text {
     padding: 5px;
     font-size: small; } }
+
+.home .welcome-box img {
+  width: 200px;
+  display: inline;
+  grid-area: photo; }
 
 .home .news-box-1 h2 {
   grid-area: title; }
@@ -86,7 +107,7 @@ footer {
   grid-area: texto;
   padding: 0px 10px; }
 
-.index-photo, .home .welcome-box img, .home .news-box-1 img, .home .news-box-2 img, .home .news-box-3 img {
+.index-photo, .home .news-box-1 img, .home .news-box-2 img, .home .news-box-3 img {
   width: 300px;
   display: inline;
   grid-area: photo; }
@@ -132,11 +153,11 @@ footer {
     grid-template-areas: "title" "photo" "texto";
     padding: 5px; } }
 
-.courses {
+.courses .courses_content {
   display: grid;
   grid-template-areas: "elem inter" "adv exam";
   justify-items: center; }
-  .courses .courses_card {
+  .courses .courses_content .courses_card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,17 +165,17 @@ footer {
     padding-left: 5px;
     padding-right: 5px;
     width: 400px; }
-    .courses .courses_card p {
+    .courses .courses_content .courses_card p {
       text-align: justify; }
-    .courses .courses_card button, .courses .courses_card .contact .contact-form .contact_button, .contact .contact-form .courses .courses_card .contact_button {
+    .courses .courses_content .courses_card button, .courses .courses_content .courses_card .contact .contact-form .contact_button, .contact .contact-form .courses .courses_content .courses_card .contact_button {
       margin: 5px; }
-  .courses .courses_card-elem {
+  .courses .courses_content .courses_card-elem {
     grid-area: elem; }
-  .courses .courses_card-inter {
+  .courses .courses_content .courses_card-inter {
     grid-area: inter; }
-  .courses .courses_card-adv {
+  .courses .courses_content .courses_card-adv {
     grid-area: adv; }
-  .courses .courses_card-exam {
+  .courses .courses_content .courses_card-exam {
     grid-area: exam; }
 
 @media (max-width: 1000px) {
@@ -162,7 +183,7 @@ footer {
     width: auto; } }
 
 @media (max-width: 425px) {
-  .courses {
+  .courses_content {
     display: grid;
     grid-template-areas: "elem" "inter" "adv" "exam"; } }
 
@@ -283,7 +304,7 @@ footer {
     align-items: center;
     justify-items: center; } }
 
-@media (max-width: 425px) {
+@media (max-width: 740px) {
   .comunidad .mision {
     flex-direction: column; }
   .comunidad .redes {

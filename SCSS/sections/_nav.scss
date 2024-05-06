@@ -1,6 +1,11 @@
 .navbar-brand {
-    background-color: rgba(20, 184, 86, 0.308);
+    img{
+        padding: 0px 5px;
+    }
+    background-color: var(--fondo-verde);
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 5px;
+    font-family: $fuente-titulos;
+    font-weight: bold;
 }

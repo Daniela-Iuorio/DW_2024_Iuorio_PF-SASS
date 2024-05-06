@@ -10,7 +10,9 @@
         }
 
         img {
-            @extend .index-photo;
+            width: 200px;
+    display: inline;
+    grid-area: photo;
         }
     }
 
