@@ -1,11 +1,15 @@
 .comunidad {
     @extend .main-gradient;
+    h2{
+        animation-delay: 1s;
+    }
 
     .mision {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         padding: 0px 10px 0px 10px;
+        animation-delay: 1.5s;
 
         p {
             text-align: justify;
@@ -18,6 +22,10 @@
         }
     }
 
+    .h2-redes{
+        animation-delay: 2s;
+    }
+
     .redes {
         @extend .flex-row;
 
@@ -27,6 +35,7 @@
             border-radius: 10px;
             margin: 10px;
             @extend .flex-column;
+            animation-delay: 2.5s;
 
             .redes_social-link {
                 color: rgba(0, 0, 0, 0.767);
@@ -39,6 +48,7 @@
             box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
             overflow: hidden;
             margin: 20px;
+            animation-delay: 2.5s;
         }
     }
 }

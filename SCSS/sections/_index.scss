@@ -4,6 +4,7 @@
     .welcome-box {
         @extend .box;
         @extend .invertida;
+        animation-delay: 1s;
 
         p {
             @extend .box-text;
@@ -11,17 +12,19 @@
 
         img {
             width: 180px;
-    display: inline;
-    grid-area: photo;
+            display: inline;
+            grid-area: photo;
         }
     }
 
     .news-box-1 {
         @extend .box;
         @extend .box-style;
-
+        animation-delay: 1.5s;
         img {
-            @extend .index-photo;
+            width: 300px;
+    display: inline;
+    grid-area: photo;
         }
 
         h2 {
@@ -31,7 +34,8 @@
         p {
             @extend .box-text;
         }
-        a{
+
+        a {
             color: blue;
             text-decoration: underline;
             padding: 0px 5px;
@@ -42,9 +46,11 @@
         @extend .box;
         @extend .box-style;
         @extend .invertida;
-
+        animation-delay: 2s;
         img {
-            @extend .index-photo;
+            width: 300px;
+            display: inline;
+            grid-area: photo;
         }
 
         h2 {
@@ -54,7 +60,8 @@
         p {
             @extend .box-text;
         }
-        a{
+
+        a {
             color: blue;
             text-decoration: underline;
             padding: 0px 5px;
@@ -64,10 +71,11 @@
     .news-box-3 {
         @extend .box;
         @extend .box-style;
-
+        animation-delay: 2.5s;
         img {
-            @extend .index-photo;
-            @extend .rueda;
+            width: 250px;
+            display: inline;
+            grid-area: photo;
         }
 
         h2 {
@@ -77,7 +85,8 @@
         p {
             @extend .box-text;
         }
-        a{
+
+        a {
             color: blue;
             text-decoration: underline;
             padding: 0px 5px;
@@ -90,11 +99,6 @@
     padding: 0px 10px;
 }
 
-.index-photo {
-    width: 300px;
-    display: inline;
-    grid-area: photo;
-}
 
 
 .box {
@@ -107,10 +111,6 @@
     padding: 5px;
     text-align: justify;
     margin: 0px 50px;
-}
-
-.rueda {
-    width: 250px;
 }
 
 

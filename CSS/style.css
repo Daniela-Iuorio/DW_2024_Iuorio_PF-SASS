@@ -89,43 +89,55 @@ footer {
     padding: 5px;
     font-size: small; } }
 
-.home .welcome-box img {
-  width: 180px;
-  display: inline;
-  grid-area: photo; }
+.home .welcome-box {
+  animation-delay: 1s; }
+  .home .welcome-box img {
+    width: 180px;
+    display: inline;
+    grid-area: photo; }
 
-.home .news-box-1 h2 {
-  grid-area: title; }
+.home .news-box-1 {
+  animation-delay: 1.5s; }
+  .home .news-box-1 img {
+    width: 300px;
+    display: inline;
+    grid-area: photo; }
+  .home .news-box-1 h2 {
+    grid-area: title; }
+  .home .news-box-1 a {
+    color: blue;
+    text-decoration: underline;
+    padding: 0px 5px; }
 
-.home .news-box-1 a {
-  color: blue;
-  text-decoration: underline;
-  padding: 0px 5px; }
+.home .news-box-2 {
+  animation-delay: 2s; }
+  .home .news-box-2 img {
+    width: 300px;
+    display: inline;
+    grid-area: photo; }
+  .home .news-box-2 h2 {
+    grid-area: title; }
+  .home .news-box-2 a {
+    color: blue;
+    text-decoration: underline;
+    padding: 0px 5px; }
 
-.home .news-box-2 h2 {
-  grid-area: title; }
-
-.home .news-box-2 a {
-  color: blue;
-  text-decoration: underline;
-  padding: 0px 5px; }
-
-.home .news-box-3 h2 {
-  grid-area: title; }
-
-.home .news-box-3 a {
-  color: blue;
-  text-decoration: underline;
-  padding: 0px 5px; }
+.home .news-box-3 {
+  animation-delay: 2.5s; }
+  .home .news-box-3 img {
+    width: 250px;
+    display: inline;
+    grid-area: photo; }
+  .home .news-box-3 h2 {
+    grid-area: title; }
+  .home .news-box-3 a {
+    color: blue;
+    text-decoration: underline;
+    padding: 0px 5px; }
 
 .box-text, .home .welcome-box p, .home .news-box-1 p, .home .news-box-2 p, .home .news-box-3 p {
   grid-area: texto;
   padding: 0px 10px; }
-
-.index-photo, .home .news-box-1 img, .home .news-box-2 img, .home .news-box-3 img {
-  width: 300px;
-  display: inline;
-  grid-area: photo; }
 
 .box, .home .welcome-box, .home .news-box-1, .home .news-box-2, .home .news-box-3 {
   align-items: center;
@@ -134,9 +146,6 @@ footer {
   padding: 5px;
   text-align: justify;
   margin: 0px 50px; }
-
-.rueda, .home .news-box-3 img {
-  width: 250px; }
 
 .invertida, .home .welcome-box, .home .news-box-2 {
   grid-template-areas: "title photo" "texto photo"; }
@@ -186,13 +195,17 @@ footer {
     .courses .courses_content .courses_card button, .courses .courses_content .courses_card .contact .contact-form .contact_button, .contact .contact-form .courses .courses_content .courses_card .contact_button {
       margin: 5px; }
   .courses .courses_content .courses_card-elem {
-    grid-area: elem; }
+    grid-area: elem;
+    animation-delay: 1s; }
   .courses .courses_content .courses_card-inter {
-    grid-area: inter; }
+    grid-area: inter;
+    animation-delay: 1s; }
   .courses .courses_content .courses_card-adv {
-    grid-area: adv; }
+    grid-area: adv;
+    animation-delay: 1.5s; }
   .courses .courses_content .courses_card-exam {
-    grid-area: exam; }
+    grid-area: exam;
+    animation-delay: 1.5s; }
 
 @media (max-width: 1000px) {
   .courses .courses_card {
@@ -203,27 +216,34 @@ footer {
     display: grid;
     grid-template-areas: "elem" "inter" "adv" "exam"; } }
 
+.resources h2 {
+  animation-delay: 1s; }
+
 .resources .resources_columns {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  animation-delay: 1.5s; }
   .resources .resources_columns ul li a {
     text-decoration: none;
     color: black; }
 
-.resources .games .games_link {
-  text-decoration: none; }
-  .resources .games .games_link .game-picture {
-    width: 230px;
-    height: 150px;
-    border: solid black 1px;
-    margin: 5px; }
+.resources .games {
+  animation-delay: 2s; }
+  .resources .games .games_link {
+    text-decoration: none; }
+    .resources .games .games_link .game-picture {
+      width: 230px;
+      height: 150px;
+      border: solid black 1px;
+      margin: 5px; }
 
 .resources .section-videos {
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-areas: "video1 video2" "video1 video2" "video3 spotify1" "video3 spotify2"; }
+  grid-template-areas: "video1 video2" "video1 video2" "video3 spotify1" "video3 spotify2";
+  animation-delay: 2s; }
   .resources .section-videos .video1 {
     grid-area: video1; }
   .resources .section-videos .video2 {
@@ -283,11 +303,15 @@ footer {
     .resources .section-videos .spotify-iframe {
       width: 350px; } }
 
+.comunidad h2 {
+  animation-delay: 1s; }
+
 .comunidad .mision {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0px 10px 0px 10px; }
+  padding: 0px 10px 0px 10px;
+  animation-delay: 1.5s; }
   .comunidad .mision p {
     text-align: justify;
     padding: 5px;
@@ -295,11 +319,15 @@ footer {
   .comunidad .mision img {
     width: 220px; }
 
+.comunidad .h2-redes {
+  animation-delay: 2s; }
+
 .comunidad .redes .redes_social {
   background-color: rgba(0, 0, 0, 0.233);
   width: 50px;
   border-radius: 10px;
-  margin: 10px; }
+  margin: 10px;
+  animation-delay: 2.5s; }
   .comunidad .redes .redes_social .redes_social-link {
     color: rgba(0, 0, 0, 0.767);
     font-size: 30px; }
@@ -308,7 +336,8 @@ footer {
   border-radius: 10px;
   box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
   overflow: hidden;
-  margin: 20px; }
+  margin: 20px;
+  animation-delay: 2.5s; }
 
 @media (min-width: 900px) {
   .comunidad .redes .redes_social {
@@ -331,7 +360,8 @@ footer {
       justify-content: space-evenly; } }
 
 .contact .contact-form {
-  padding: 10px; }
+  padding: 10px;
+  animation-delay: 1s; }
   .contact .contact-form .form-item {
     margin: 5px;
     padding: 5px; }
@@ -346,7 +376,8 @@ footer {
 
 .contact .email-phone-time {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  animation-delay: 1.5s; }
   .contact .email-phone-time ul {
     margin: 10px;
     padding: 0px; }
@@ -357,7 +388,8 @@ footer {
 
 .contact .horario-atencion {
   margin: 15px;
-  text-align: center; }
+  text-align: center;
+  animation-delay: 2s; }
 
 @media (max-width: 425px) {
   .contact .email-phone-time {
@@ -373,12 +405,20 @@ footer {
   .contact .contact-form .contact_input-email {
     width: 300px; } }
 
+.nosotros h2 {
+  animation-delay: 1s; }
+
 .nosotros .historia p {
   text-align: justify;
   padding: 5px;
-  margin: 5px; }
+  margin: 5px;
+  animation-delay: 1.5s; }
+
+.nosotros .h2-staff {
+  animation-delay: 2s; }
 
 .nosotros #carouselExample {
+  animation-delay: 2.5s;
   display: flex;
   justify-content: center; }
   .nosotros #carouselExample .carousel-inner {

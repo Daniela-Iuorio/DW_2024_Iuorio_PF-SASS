@@ -30,18 +30,22 @@
 
         .courses_card-elem {
             grid-area: elem;
+            animation-delay: 1s;
         }
 
         .courses_card-inter {
             grid-area: inter;
+            animation-delay: 1s;
         }
 
         .courses_card-adv {
             grid-area: adv;
+            animation-delay: 1.5s;
         }
 
         .courses_card-exam {
             grid-area: exam;
+            animation-delay: 1.5s;
         }
     }
 }

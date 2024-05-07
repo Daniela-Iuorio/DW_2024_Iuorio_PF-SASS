@@ -3,6 +3,7 @@
 
     .contact-form {
         padding: 10px;
+        animation-delay: 1s;
 
         .form-item {
             margin: 5px;
@@ -31,6 +32,7 @@
     .email-phone-time {
         display: flex;
         justify-content: space-evenly;
+        animation-delay: 1.5s;
 
         ul {
             margin: 10px;
@@ -47,6 +49,7 @@
     .horario-atencion {
         margin: 15px;
         text-align: center;
+        animation-delay: 2s;
     }
 }
 

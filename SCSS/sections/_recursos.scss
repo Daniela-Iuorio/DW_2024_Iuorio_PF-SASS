@@ -1,11 +1,15 @@
 .resources {
     @extend .main-gradient;
 
+    h2{
+        animation-delay: 1s;
+    }
+
     .resources_columns {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
+        animation-delay: 1.5s;
         ul {
             li {
                 a {
@@ -17,6 +21,7 @@
     }
 
     .games {
+        animation-delay: 2s;
         .games_link {
             text-decoration: none;
 
@@ -39,6 +44,7 @@
             "video3 spotify1"
             "video3 spotify2"
         ;
+        animation-delay: 2s;
 
         .video1 {
             grid-area: video1
