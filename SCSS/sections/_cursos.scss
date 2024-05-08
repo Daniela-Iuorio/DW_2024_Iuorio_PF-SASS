@@ -59,9 +59,11 @@
 }
 
 @media (max-width: 770px) {
-    .courses_content {
-        display: flex;
-        flex-direction: column;
-        ;
+    .courses{
+        .courses_content {
+            display: flex;
+            flex-direction: column;
+            ;
+        }
     }
 }

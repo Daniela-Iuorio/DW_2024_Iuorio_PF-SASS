@@ -167,16 +167,22 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 5px; }
+    .home .news-box-1 img {
+      width: 95%; }
   .home .news-box-2 {
     justify-items: center;
     display: flex;
     flex-direction: column;
     padding: 5px; }
+    .home .news-box-2 img {
+      width: 95%; }
   .home .news-box-3 {
     justify-items: center;
     display: flex;
     flex-direction: column;
-    padding: 5px; } }
+    padding: 5px; }
+    .home .news-box-3 img {
+      width: 95%; } }
 
 .courses .courses_content {
   display: grid;
@@ -212,7 +218,7 @@ footer {
     width: auto; } }
 
 @media (max-width: 770px) {
-  .courses_content {
+  .courses .courses_content {
     display: flex;
     flex-direction: column; } }
 
