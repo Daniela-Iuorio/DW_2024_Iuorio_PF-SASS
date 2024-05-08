@@ -217,10 +217,15 @@ footer {
   .courses .courses_card {
     width: auto; } }
 
-@media (max-width: 770px) {
+@media (max-width: 840px) {
   .courses .courses_content {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center; } }
+
+@media (max-width: 425px) {
+  .courses .courses_content .courses_card {
+    width: auto; } }
 
 .resources h2 {
   animation-delay: 1s; }
