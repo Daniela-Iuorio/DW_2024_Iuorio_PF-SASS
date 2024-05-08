@@ -134,45 +134,29 @@
     .home {
         .welcome-box {
             justify-items: center;
-            display: grid;
-            grid-template-areas:
-                "title"
-                "photo"
-                "texto"
-            ;
+            display:flex;
+            flex-direction: column;
             padding: 5px;
         }
 
         .news-box-1 {
             justify-items: center;
-            display: grid;
-            grid-template-areas:
-                "title"
-                "photo"
-                "texto"
-            ;
+            display:flex;
+            flex-direction: column;
             padding: 5px;
         }
 
         .news-box-2 {
             justify-items: center;
-            display: grid;
-            grid-template-areas:
-                "title"
-                "photo"
-                "texto"
-            ;
+            display:flex;
+            flex-direction: column;
             padding: 5px;
         }
 
         .news-box-3 {
             justify-items: center;
-            display: grid;
-            grid-template-areas:
-                "title"
-                "photo"
-                "texto"
-            ;
+            display:flex;
+            flex-direction: column;
             padding: 5px;
         }
     }

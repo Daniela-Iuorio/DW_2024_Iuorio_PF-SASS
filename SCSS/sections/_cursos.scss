@@ -58,14 +58,10 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 770px) {
     .courses_content {
-        display: grid;
-        grid-template-areas:
-            "elem"
-            "inter"
-            "adv"
-            "exam"
+        display: flex;
+        flex-direction: column;
         ;
     }
 }

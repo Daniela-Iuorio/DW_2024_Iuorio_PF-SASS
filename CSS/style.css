@@ -159,23 +159,23 @@ footer {
 @media (max-width: 660px) {
   .home .welcome-box {
     justify-items: center;
-    display: grid;
-    grid-template-areas: "title" "photo" "texto";
+    display: flex;
+    flex-direction: column;
     padding: 5px; }
   .home .news-box-1 {
     justify-items: center;
-    display: grid;
-    grid-template-areas: "title" "photo" "texto";
+    display: flex;
+    flex-direction: column;
     padding: 5px; }
   .home .news-box-2 {
     justify-items: center;
-    display: grid;
-    grid-template-areas: "title" "photo" "texto";
+    display: flex;
+    flex-direction: column;
     padding: 5px; }
   .home .news-box-3 {
     justify-items: center;
-    display: grid;
-    grid-template-areas: "title" "photo" "texto";
+    display: flex;
+    flex-direction: column;
     padding: 5px; } }
 
 .courses .courses_content {
@@ -211,10 +211,10 @@ footer {
   .courses .courses_card {
     width: auto; } }
 
-@media (max-width: 425px) {
+@media (max-width: 770px) {
   .courses_content {
-    display: grid;
-    grid-template-areas: "elem" "inter" "adv" "exam"; } }
+    display: flex;
+    flex-direction: column; } }
 
 .resources h2 {
   animation-delay: 1s; }
