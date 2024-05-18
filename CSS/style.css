@@ -8,8 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Trebuchet MS', sans-serif; }
+  box-sizing: border-box; }
 
 .flex-row, .comunidad .redes {
   display: flex;
@@ -58,8 +57,9 @@ h2 {
   margin: 0px 5px 5px 5px;
   font-family: "Alegreya", serif; }
 
-p {
-  font-family: "Alegreya Sans", sans-serif; }
+p, li, input {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: large; }
 
 @media (max-width: 425px) {
   h2 {
@@ -77,9 +77,15 @@ i:hover {
   padding-right: 5px;
   border-radius: 5px;
   font-family: "Alegreya", serif;
-  font-weight: bold; }
+  font-weight: bold;
+  text-transform: uppercase; }
   .navbar-brand img {
     padding: 0px 5px; }
+
+a.nav-link {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  font-size: large; }
 
 footer {
   background-color: var(--fondo-verde);
