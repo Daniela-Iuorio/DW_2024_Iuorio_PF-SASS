@@ -4,7 +4,7 @@
         flex-direction: column;
         width: 120px;
         position: sticky;
-        bottom: 38%;
+        bottom: 5%;
         left: 100%;
         align-items: center;
 
@@ -62,30 +62,12 @@
     }
 }
 
-// @media (max-width: 1000px) {
-//     .courses {
-//         .courses_card {
-//             width: auto;
-//         }
-//     }
-// }
 
-// @media (max-width: 840px) {
-//     .courses{
-//         .courses_content {
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//         }
-//     }
-// }
 
-// @media (max-width: 425px){
-//     .courses{
-//         .courses_content{
-//             .courses_card{
-//                 width: auto;
-//             }
-//         }
-//     }
-// }
+@media (max-width: 600px){
+    .courses{
+        .courses_content{
+            width: auto;
+        }
+    }
+}

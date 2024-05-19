@@ -202,7 +202,7 @@ footer {
   flex-direction: column;
   width: 120px;
   position: sticky;
-  bottom: 38%;
+  bottom: 5%;
   left: 100%;
   align-items: center; }
   .courses .button-group .float-button {
@@ -239,6 +239,10 @@ footer {
     animation-delay: 1.5s; }
   .courses .courses_content .courses_card-exam {
     animation-delay: 1.5s; }
+
+@media (max-width: 600px) {
+  .courses .courses_content {
+    width: auto; } }
 
 .resources h2 {
   animation-delay: 1s; }
