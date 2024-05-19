@@ -28,7 +28,7 @@ button, .contact .contact-form .contact_button {
   padding: 5px;
   box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705); }
 
-.button-bg-color, .courses .courses_content .courses_card button, .courses .courses_content .courses_card .contact .contact-form .contact_button, .contact .contact-form .courses .courses_content .courses_card .contact_button {
+.button-bg-color {
   background-color: rgba(146, 236, 73, 0.247); }
 
 a {
@@ -197,48 +197,48 @@ footer {
     .home .news-box-3 img {
       width: 95%; } }
 
+.courses .button-group {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  position: sticky;
+  bottom: 38%;
+  left: 100%;
+  align-items: center; }
+  .courses .button-group .float-button {
+    background-color: var(--verde-oscuro);
+    color: #fff;
+    padding: 5px;
+    border-radius: 7%;
+    text-decoration: none;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px 0; }
+
 .courses .courses_content {
-  display: grid;
-  grid-template-areas: "elem inter" "adv exam";
-  justify-items: center; }
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto; }
   .courses .courses_content .courses_card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 400px; }
+    margin: 30px;
+    width: auto; }
     .courses .courses_content .courses_card p {
       text-align: justify; }
-    .courses .courses_content .courses_card button, .courses .courses_content .courses_card .contact .contact-form .contact_button, .contact .contact-form .courses .courses_content .courses_card .contact_button {
-      margin: 5px; }
   .courses .courses_content .courses_card-elem {
-    grid-area: elem;
     animation-delay: 1s; }
   .courses .courses_content .courses_card-inter {
-    grid-area: inter;
     animation-delay: 1s; }
   .courses .courses_content .courses_card-adv {
-    grid-area: adv;
     animation-delay: 1.5s; }
   .courses .courses_content .courses_card-exam {
-    grid-area: exam;
     animation-delay: 1.5s; }
-
-@media (max-width: 1000px) {
-  .courses .courses_card {
-    width: auto; } }
-
-@media (max-width: 840px) {
-  .courses .courses_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center; } }
-
-@media (max-width: 425px) {
-  .courses .courses_content .courses_card {
-    width: auto; } }
 
 .resources h2 {
   animation-delay: 1s; }
