@@ -1,37 +1,49 @@
 .contact {
-    
 
     .contact-form {
+        width: 600px;
         padding: 10px;
         animation-delay: 1s;
+        margin: 0 auto;
+        background-color: #ededed;
 
+        label{
+            padding-left: 5px;
+        }
         .form-item {
+            display: block;
             margin: 5px;
+            width: 90%;
             padding: 5px;
+            border: none;
+            border-bottom: 2px solid var(--verde-oscuro);
+            
+            .contact-form-item{
+                display: inline;
+            }
+            .form-select{
+                width: auto;
+            }
+            .contact_button {
+                @extend button;
+            }
+            
         }
+        .sin-borde{
+            border: none;
+            }
 
-        .contact_input-email {
-            width: 250px;
-        }
-
-        p {
-            display: inline;
-        }
 
         textarea {
-            display: block;
-            width: 96%;
             height: 200px;
         }
 
-        .contact_button {
-            @extend button;
-        }
+        
     }
 
     .email-phone-time {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         animation-delay: 1.5s;
 
         ul {
@@ -55,36 +67,37 @@
 
 // Media Queries
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
     .contact {
         .email-phone-time {
             flex-direction: column;
-        }
-
-        .contact-form {
-            .contact_input-email {
-                width: 95%;
-            }
+            align-items: center;
         }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .contact {
         .contact-form {
-            .contact_button {
-                display: block;
+            width: auto;
+            .form-item{
+
+                .contact_button {
+                    display: block;
+                }
             }
         }
     }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
-    .contact {
-        .contact-form {
-            .contact_input-email {
-                width: 300px;
+@media (min-width: 601px) {
+    .contact{
+        .contact-form{
+            .contact_button{
+                position: sticky;
+                left: 95%;
             }
         }
     }
 }
+

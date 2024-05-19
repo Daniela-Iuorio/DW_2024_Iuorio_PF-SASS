@@ -65,21 +65,29 @@
                 <h1>CONTACTO</h1>
             </div>
             <form action="#" method="get" class="contact-form animate__animated animate__fadeIn">
-                <input class="form-item" type="text" placeholder="Nombre y Apellido" name="nombre-apellido">
+                <label for="text">Nombre y apellido</label>
+                <input class="form-item" type="text" placeholder="Jhon Doe" name="nombre-apellido">
+                <label for="email"> Dirección de correo electrónico</label>
                 <input class="form-item contact_input-email" type="email" placeholder="correo@mail.com"
                     name="email-usuario">
-                <input class="form-item" type="tel" placeholder="celular sin 0 ni 15" name="celular">
-                <p class="form-item">Curso de interés:</p>
-                <select class="form-item" name="Curso">
-                    <option value="Elem">Elementary</option>
-                    <option value="Inter">Intermediate</option>
-                    <option value="Adv">Advanced</option>
-                    <option value="Exam">Exam training</option>
-                </select>
+                <label for="tel">Número de teléfono</label>
+                    <input class="form-item" type="tel" placeholder="+54 9 11 13212312" name="celular">
+                <div class="form-item sin-borde">
+                    <label for="curso" class="contact-form-item sin-borde">Curso de interés:</label>
+                    <select class="contact-form-item form-select" name="Curso">
+                        <option value="Elem">Elementary</option>
+                        <option value="Inter">Intermediate</option>
+                        <option value="Adv">Advanced</option>
+                        <option value="Exam">Exam training</option>
+                    </select>
+                </div>
+
                 <textarea name="comentario" placeholder="Contanos cómo podemos ayudarte."
                     class="form-item comentario"></textarea>
-                <input class="form-item" type="checkbox" name="suscripcion"> Recibir novedades y promociones por email.
-                <input class="form-item contact_button" type="submit" value="Enviar">
+                <div class="form-item sin-borde">
+                    <input class="contact-form-item" type="checkbox" name="suscripcion"> Recibir novedades y promociones por email.
+                <input class="contact-form-item contact_button sin-borde" type="submit" value="Enviar">
+            </div>
             </form>
             <div class="email-phone-time animate__animated animate__fadeInUp">
                 <ul>

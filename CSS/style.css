@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center; }
 
-button, .contact .contact-form .contact_button {
+button, .contact .contact-form .form-item .contact_button {
   border-radius: 5px;
   border: transparent;
   padding: 5px;
@@ -388,23 +388,32 @@ footer {
       justify-content: space-evenly; } }
 
 .contact .contact-form {
+  width: 600px;
   padding: 10px;
-  animation-delay: 1s; }
+  animation-delay: 1s;
+  margin: 0 auto;
+  background-color: #ededed; }
+  .contact .contact-form label {
+    padding-left: 5px; }
   .contact .contact-form .form-item {
-    margin: 5px;
-    padding: 5px; }
-  .contact .contact-form .contact_input-email {
-    width: 250px; }
-  .contact .contact-form p {
-    display: inline; }
-  .contact .contact-form textarea {
     display: block;
-    width: 96%;
+    margin: 5px;
+    width: 90%;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid var(--verde-oscuro); }
+    .contact .contact-form .form-item .contact-form-item {
+      display: inline; }
+    .contact .contact-form .form-item .form-select {
+      width: auto; }
+  .contact .contact-form .sin-borde {
+    border: none; }
+  .contact .contact-form textarea {
     height: 200px; }
 
 .contact .email-phone-time {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   animation-delay: 1.5s; }
   .contact .email-phone-time ul {
     margin: 10px;
@@ -419,19 +428,21 @@ footer {
   text-align: center;
   animation-delay: 2s; }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .contact .email-phone-time {
-    flex-direction: column; }
-  .contact .contact-form .contact_input-email {
-    width: 95%; } }
+    flex-direction: column;
+    align-items: center; } }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  .contact .contact-form {
+    width: auto; }
+    .contact .contact-form .form-item .contact_button {
+      display: block; } }
+
+@media (min-width: 601px) {
   .contact .contact-form .contact_button {
-    display: block; } }
-
-@media (min-width: 426px) and (max-width: 768px) {
-  .contact .contact-form .contact_input-email {
-    width: 300px; } }
+    position: sticky;
+    left: 95%; } }
 
 .nosotros h2 {
   animation-delay: 1s; }
@@ -474,12 +485,12 @@ footer {
         padding: 5px;
         margin: 10px;
         width: 140px; }
-  .nosotros #carouselExample button, .nosotros #carouselExample .contact .contact-form .contact_button, .contact .contact-form .nosotros #carouselExample .contact_button {
+  .nosotros #carouselExample button, .nosotros #carouselExample .contact .contact-form .form-item .contact_button, .contact .contact-form .form-item .nosotros #carouselExample .contact_button {
     box-shadow: none; }
-    .nosotros #carouselExample button .carousel-control-prev-icon, .nosotros #carouselExample .contact .contact-form .contact_button .carousel-control-prev-icon, .contact .contact-form .nosotros #carouselExample .contact_button .carousel-control-prev-icon,
+    .nosotros #carouselExample button .carousel-control-prev-icon, .nosotros #carouselExample .contact .contact-form .form-item .contact_button .carousel-control-prev-icon, .contact .contact-form .form-item .nosotros #carouselExample .contact_button .carousel-control-prev-icon,
     .nosotros #carouselExample button .carousel-control-next-icon,
-    .nosotros #carouselExample .contact .contact-form .contact_button .carousel-control-next-icon,
-    .contact .contact-form .nosotros #carouselExample .contact_button .carousel-control-next-icon {
+    .nosotros #carouselExample .contact .contact-form .form-item .contact_button .carousel-control-next-icon,
+    .contact .contact-form .form-item .nosotros #carouselExample .contact_button .carousel-control-next-icon {
       background-color: black;
       border-radius: 20px;
       width: 30px;
