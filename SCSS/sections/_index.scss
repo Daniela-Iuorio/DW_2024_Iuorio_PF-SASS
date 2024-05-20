@@ -20,9 +20,7 @@
         }
 
         .news-box {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
+            @extend .flex-column;
             padding: 5px;
             text-align: justify;
             margin: 10px;

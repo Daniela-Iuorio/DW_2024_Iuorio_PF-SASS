@@ -1,12 +1,11 @@
 .courses {
     .button-group{
-        display: flex;
-        flex-direction: column;
+        @extend .flex-column;
         width: 120px;
         position: sticky;
         bottom: 5%;
         left: 100%;
-        align-items: center;
+        
 
         .float-button {
             background-color: var(--verde-oscuro);
@@ -22,17 +21,12 @@
     }
     .courses_content {
         width: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
+        @extend .flex-column;
         margin: 0 auto;
 
 
         .courses_card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @extend .flex-column;
             margin: 10px 30px;
             width: auto;
 

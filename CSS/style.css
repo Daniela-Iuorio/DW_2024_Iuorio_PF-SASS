@@ -10,13 +10,13 @@
   padding: 0;
   box-sizing: border-box; }
 
-.flex-row, .comunidad .redes {
+.flex-row, .comunidad .comunidad-content .redes .redes_social {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
 
-.flex-column, .comunidad .redes .redes_social {
+.flex-column, .home .home-content .news-box, .courses .button-group, .courses .courses_content, .courses .courses_content .courses_card, .comunidad .comunidad-content .mision, .comunidad .comunidad-content .redes {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,9 +114,6 @@ footer {
       padding: 5px;
       margin: 10px; }
   .home .home-content .news-box {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     padding: 5px;
     text-align: justify;
     margin: 10px;
@@ -143,13 +140,10 @@ footer {
       margin: 20px; } }
 
 .courses .button-group {
-  display: flex;
-  flex-direction: column;
   width: 120px;
   position: sticky;
   bottom: 5%;
-  left: 100%;
-  align-items: center; }
+  left: 100%; }
   .courses .button-group .float-button {
     background-color: var(--verde-oscuro);
     color: #fff;
@@ -163,15 +157,8 @@ footer {
 
 .courses .courses_content {
   width: 600px;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
   margin: 0 auto; }
   .courses .courses_content .courses_card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 10px 30px;
     width: auto; }
     .courses .courses_content .courses_card p {
@@ -276,61 +263,44 @@ footer {
     .resources .section-videos .spotify-iframe {
       width: 350px; } }
 
-.comunidad h2 {
-  animation-delay: 1s; }
+.comunidad .comunidad-content {
+  width: 600px;
+  margin: 0 auto; }
+  .comunidad .comunidad-content h2 {
+    animation-delay: 1s;
+    text-align: center; }
+  .comunidad .comunidad-content .mision {
+    padding: 10px;
+    animation-delay: 1.5s; }
+    .comunidad .comunidad-content .mision p {
+      text-align: justify;
+      padding: 5px;
+      margin: 5px; }
+    .comunidad .comunidad-content .mision img {
+      width: 70%; }
+  .comunidad .comunidad-content .h2-redes {
+    animation-delay: 2s; }
+  .comunidad .comunidad-content .redes .redes_social {
+    background-color: rgba(0, 0, 0, 0.233);
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: space-evenly;
+    animation-delay: 2.5s; }
+    .comunidad .comunidad-content .redes .redes_social .redes_social-link {
+      color: rgba(0, 0, 0, 0.767);
+      font-size: 30px; }
+  .comunidad .comunidad-content .redes .reddit {
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
+    overflow: hidden;
+    margin: 20px;
+    animation-delay: 2.5s; }
 
-.comunidad .mision {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 0px 10px 0px 10px;
-  animation-delay: 1.5s; }
-  .comunidad .mision p {
-    text-align: justify;
-    padding: 5px;
-    margin: 5px; }
-  .comunidad .mision img {
-    width: 220px; }
-
-.comunidad .h2-redes {
-  animation-delay: 2s; }
-
-.comunidad .redes .redes_social {
-  background-color: rgba(0, 0, 0, 0.233);
-  width: 50px;
-  border-radius: 10px;
-  margin: 10px;
-  animation-delay: 2.5s; }
-  .comunidad .redes .redes_social .redes_social-link {
-    color: rgba(0, 0, 0, 0.767);
-    font-size: 30px; }
-
-.comunidad .redes .reddit {
-  border-radius: 10px;
-  box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
-  overflow: hidden;
-  margin: 20px;
-  animation-delay: 2.5s; }
-
-@media (min-width: 900px) {
-  .comunidad .redes .redes_social {
-    background-color: rgba(0, 0, 0, 0.137);
-    width: 150px;
-    height: 240px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center; } }
-
-@media (max-width: 740px) {
-  .comunidad .mision {
-    flex-direction: column; }
-  .comunidad .redes {
-    flex-direction: column; }
-    .comunidad .redes .redes_social {
-      flex-direction: row;
-      width: 90%;
-      justify-content: space-evenly; } }
+@media (max-width: 600px) {
+  .comunidad .comunidad-content {
+    width: auto; } }
 
 .contact .contact-form {
   width: 600px;
