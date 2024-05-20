@@ -16,7 +16,7 @@
   align-items: center;
   flex-wrap: wrap; }
 
-.flex-column, .home .home-content .news-box, .courses .button-group, .courses .courses_content, .courses .courses_content .courses_card, .comunidad .comunidad-content .mision, .comunidad .comunidad-content .redes {
+.flex-column, .home .home-content .news-box, .courses .button-group, .courses .courses_content, .courses .courses_content .courses_card, .comunidad .comunidad-content .mision, .comunidad .comunidad-content .redes, .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,7 +55,8 @@ h2 {
   color: var(--verde-oscuro);
   padding: 5px;
   margin: 0px 5px 5px 5px;
-  font-family: "Alegreya", serif; }
+  font-family: "Alegreya", serif;
+  text-align: center; }
 
 p, li, input {
   font-family: "Alegreya Sans", sans-serif;
@@ -359,66 +360,68 @@ footer {
     position: sticky;
     left: 95%; } }
 
-.nosotros h2 {
-  animation-delay: 1s; }
-
-.nosotros .historia p {
-  text-align: justify;
-  padding: 5px;
-  margin: 5px;
-  animation-delay: 1.5s; }
-
-.nosotros .h2-staff {
-  animation-delay: 2s; }
-
-.nosotros #carouselExample {
-  animation-delay: 2.5s;
-  display: flex;
-  justify-content: center; }
-  .nosotros #carouselExample .carousel-inner {
-    width: 80%; }
-    .nosotros #carouselExample .carousel-inner .carousel-item .teacher {
-      display: grid;
-      grid-template-areas: "nombre textoTeach" "foto textoTeach";
-      text-align: justify;
-      align-items: center;
-      margin: 20px;
-      background-color: rgba(170, 238, 198, 0.479);
-      border-radius: 10px;
-      box-shadow: 1px 1px 2px 2px rgba(128, 128, 128, 0.705);
-      padding: 10px; }
-      .nosotros #carouselExample .carousel-inner .carousel-item .teacher h3 {
-        grid-area: nombre;
+.nosotros .nosotros-content {
+  width: 600px;
+  margin: 0 auto; }
+  .nosotros .nosotros-content h2 {
+    animation-delay: 1s; }
+  .nosotros .nosotros-content .historia p {
+    text-align: justify;
+    padding: 5px;
+    margin: 5px;
+    animation-delay: 1.5s; }
+  .nosotros .nosotros-content .h2-staff {
+    animation-delay: 2s; }
+  .nosotros .nosotros-content #carouselExample {
+    animation-delay: 2.5s; }
+    .nosotros .nosotros-content #carouselExample .carousel-indicators button, .nosotros .nosotros-content #carouselExample .carousel-indicators .contact .contact-form .form-item .contact_button, .contact .contact-form .form-item .nosotros .nosotros-content #carouselExample .carousel-indicators .contact_button {
+      background-color: black; }
+    .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher {
+      height: 400px;
+      justify-content: flex-end; }
+      .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher .teacher-div {
+        margin: 20px;
+        background-color: #f8d9ab;
+        border-radius: 10px;
+        padding: 10px; }
+      .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher h3 {
         padding: 5px;
-        margin: 10px; }
-      .nosotros #carouselExample .carousel-inner .carousel-item .teacher p {
+        margin: 30px 5px 10px 5px;
+        text-align: center; }
+      .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher p {
         padding: 5px;
         margin: 10px;
-        grid-area: textoTeach; }
-      .nosotros #carouselExample .carousel-inner .carousel-item .teacher img {
-        grid-area: foto;
+        text-align: justify; }
+      .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher img {
         padding: 5px;
         margin: 10px;
-        width: 140px; }
-  .nosotros #carouselExample button, .nosotros #carouselExample .contact .contact-form .form-item .contact_button, .contact .contact-form .form-item .nosotros #carouselExample .contact_button {
-    box-shadow: none; }
-    .nosotros #carouselExample button .carousel-control-prev-icon, .nosotros #carouselExample .contact .contact-form .form-item .contact_button .carousel-control-prev-icon, .contact .contact-form .form-item .nosotros #carouselExample .contact_button .carousel-control-prev-icon,
-    .nosotros #carouselExample button .carousel-control-next-icon,
-    .nosotros #carouselExample .contact .contact-form .form-item .contact_button .carousel-control-next-icon,
-    .contact .contact-form .form-item .nosotros #carouselExample .contact_button .carousel-control-next-icon {
-      background-color: black;
-      border-radius: 20px;
-      width: 30px;
-      height: 30px; }
+        width: 140px;
+        position: absolute;
+        top: 4%;
+        border-radius: 66px;
+        border: solid 2px var(--verde-oscuro);
+        background-color: white; }
+    .nosotros .nosotros-content #carouselExample button, .nosotros .nosotros-content #carouselExample .contact .contact-form .form-item .contact_button, .contact .contact-form .form-item .nosotros .nosotros-content #carouselExample .contact_button {
+      box-shadow: none; }
 
-@media (max-width: 660px) {
-  .nosotros #carouselExample .carousel-inner .carousel-item .teacher {
-    grid-template-areas: "nombre" "foto" "textoTeach";
-    justify-items: center; } }
+@media (max-width: 600px) {
+  .nosotros .nosotros-content {
+    width: auto; } }
 
-@media (min-width: 661px) and (max-width: 760px) {
-  .nosotros #carouselExample .carousel-inner .carousel-item .teacher {
-    grid-template-areas: "nombre nombre" "foto textoTeach";
-    justify-items: center; }
-    .nosotros #carouselExample .carousel-inner .carousel-item .teacher img {
-      width: 166px; } }
+@media (max-width: 320px) {
+  .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher {
+    height: 550px; }
+    .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher img {
+      top: 0%; } }
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher {
+    height: 500px; }
+    .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher img {
+      top: 0%; } }
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher {
+    height: 470px; }
+    .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher img {
+      top: -1%; } }
