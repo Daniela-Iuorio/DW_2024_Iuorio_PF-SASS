@@ -177,92 +177,43 @@ footer {
   .courses .courses_content {
     width: auto; } }
 
-.resources h2 {
-  animation-delay: 1s; }
-
-.resources .resources_columns {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  animation-delay: 1.5s; }
-  .resources .resources_columns ul li a {
-    text-decoration: none;
-    color: black; }
-
-.resources .games {
-  animation-delay: 2s; }
-  .resources .games .games_link {
-    text-decoration: none; }
-    .resources .games .games_link .game-picture {
-      width: 230px;
-      height: 150px;
-      border: solid black 1px;
-      margin: 5px; }
-
-.resources .section-videos {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-areas: "video1 video2" "video1 video2" "video3 spotify1" "video3 spotify2";
-  animation-delay: 2s; }
-  .resources .section-videos .video1 {
-    grid-area: video1; }
-  .resources .section-videos .video2 {
-    grid-area: video2; }
-  .resources .section-videos .video3 {
-    grid-area: video3; }
-  .resources .section-videos .video {
-    width: 300px;
-    height: 200px;
-    margin: 20px; }
-  .resources .section-videos .spotify-iframe {
-    width: 310px;
-    height: 100px;
-    overflow: hidden; }
-  .resources .section-videos .spotify1 {
-    grid-area: spotify1; }
-  .resources .section-videos .spotify2 {
-    grid-area: spotify2; }
-
-@media (max-width: 980px) {
-  .resources .games {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center; } }
-
-@media (min-width: 500px) and (max-width: 680px) {
-  .resources .section-videos {
-    display: flex;
-    flex-direction: column; }
-    .resources .section-videos .video {
-      width: 435px;
-      height: 265px;
-      margin: 5px; }
-    .resources .section-videos .spotify-iframe {
-      width: 435px; } }
-
-@media (max-width: 500px) {
-  .resources .resources_columns {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .resources .games {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .resources .games .games_link .game-picture {
+.resources .resources-content {
+  width: 700px;
+  margin: 0 auto; }
+  .resources .resources-content h2 {
+    animation-delay: 1s; }
+  .resources .resources-content .container .row {
+    justify-content: center; }
+  .resources .resources-content .resources_columns {
+    animation-delay: 1.5s; }
+    .resources .resources-content .resources_columns a {
+      text-decoration: none;
+      color: black;
+      text-align: center; }
+  .resources .resources-content .games {
+    animation-delay: 2s; }
+    .resources .resources-content .games .games_link {
+      text-decoration: none;
+      text-align: center; }
+      .resources .resources-content .games .games_link .game-picture {
+        width: 230px;
+        height: 150px;
+        border: solid black 1px;
+        margin: 5px; }
+  .resources .resources-content .section-videos {
+    animation-delay: 2s; }
+    .resources .resources-content .section-videos .video {
       width: 300px;
-      height: auto; }
-  .resources .section-videos {
-    display: flex;
-    flex-direction: column; }
-    .resources .section-videos .video {
-      width: 350px;
-      height: auto;
-      margin: 5px; }
-    .resources .section-videos .spotify-iframe {
-      width: 350px; } }
+      height: 200px;
+      margin: 20px; }
+    .resources .resources-content .section-videos .spotify-iframe {
+      width: 310px;
+      height: 100px;
+      overflow: hidden; }
+
+@media (max-width: 550px) {
+  .resources .resources-content {
+    width: auto; } }
 
 .comunidad .comunidad-content {
   width: 600px;
