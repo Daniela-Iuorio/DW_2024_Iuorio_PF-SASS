@@ -67,10 +67,8 @@ p, li, input {
     text-align: center; } }
 
 a:hover {
-  font-weight: bold; }
-
-i:hover {
-  font-size: 40px; }
+  font-weight: bold;
+  font-size: larger; }
 
 .navbar-brand {
   background-color: var(--fondo-verde);
@@ -183,7 +181,8 @@ footer {
   .resources .resources-content h2 {
     animation-delay: 1s; }
   .resources .resources-content .container .row {
-    justify-content: center; }
+    justify-content: center;
+    align-items: end; }
   .resources .resources-content .resources_columns {
     animation-delay: 1.5s; }
     .resources .resources-content .resources_columns a {
@@ -206,10 +205,12 @@ footer {
       width: 300px;
       height: 200px;
       margin: 20px; }
-    .resources .resources-content .section-videos .spotify-iframe {
-      width: 310px;
-      height: 100px;
-      overflow: hidden; }
+    .resources .resources-content .section-videos .spotify-div {
+      text-align: center; }
+      .resources .resources-content .section-videos .spotify-div .spotify-iframe {
+        width: 310px;
+        height: 100px;
+        overflow: hidden; }
 
 @media (max-width: 550px) {
   .resources .resources-content {
@@ -361,7 +362,7 @@ footer {
 
 @media (max-width: 320px) {
   .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher {
-    height: 550px; }
+    height: 600px; }
     .nosotros .nosotros-content #carouselExample .carousel-inner .carousel-item .teacher img {
       top: 0%; } }
 
